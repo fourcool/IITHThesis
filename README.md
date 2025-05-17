@@ -29,6 +29,7 @@ Steps:
     - `la` for Liberal Arts
     - `des` for Design
     - `em` for Entrepreneurship and Management
+    - 'cip' for Center for Interdisciplinary Programs
   - degree=
     - `btech` for Bachelor of Technology
     - `bdes` for Bachelor of Design

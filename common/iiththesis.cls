@@ -121,7 +121,7 @@
 
 \define@choicekey*+{\@classname.cls}{department}[\val\position]{%
   cse, ee, mae, che, cc, es, ce, ai, bme, bt, msme, phy, math, chy,
-la, des, em}[cse]{%
+la, des, em, cip}[cse]{%
   \ifcase\position\relax %cse
     \newcommand{\department}{Computer Science and Engineering}%
   \or %ee
@@ -156,11 +156,14 @@ la, des, em}[cse]{%
     \newcommand{\department}{Design}%
   \or %em
     \newcommand{\department}{Entrepreneurship and Management}%
+    \or %cip
+  \renewcommand{\@deptpref}{}%
+  \newcommand{\department}{Center for Interdisciplinary Programs}%
   \fi
 }{%
   \ClassError{\@classname}{The option department must be one of
     cse, ee, mae, che, cc, es, ce, ai, bme, bt, msme, phy, math,
-  chy, la, des, em}
+  chy, la, des, em, cip}
 }
 
 \define@choicekey*+{\@classname.cls}{degree}[\val\position]{%
